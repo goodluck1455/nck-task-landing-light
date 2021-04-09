@@ -73,21 +73,21 @@
                     <img src="./images/paypal_2014_logo (1).png" alt="" class="paypal-logoB">
                 </div>
 
-                <form action="" class="card-details ">
+                <form action="" class="card-details" onsubmit="return validate()">
                     <div class="card-input-form">
-                        <div class="input-group">
+                        <div class="input-group ">
                             <label for="" class="pb-md-2">Credit card number</label> <br>
-                            <input type="text" class="form-control " name="" id="" placeholder="4324 5433 9382 1030"> <br>
+                            <input type="number" class="form-control " name="" id="cardnumber" placeholder="4324 5433 9382 1030"> <br>
 
                             <label for="" class="pb-md-2 mt-md-4 mt-3">Expiration date</label> <br>
-                            <input type="text" class="form-control " name="" id="" placeholder="03/24">
+                            <input type="date" class="form-control " name="" id="ExpiredDate" placeholder="03/24">
                         </div>
-                        <div class="left-side-form input-group">
+                        <div class="left-side-form input-group ">
                             <label for="" class="pb-md-2">Security code</label> <br>
-                            <input type="text" class="form-control " name="" id="" placeholder="420"> <br>
+                            <input type="number" class="form-control " name="" id="securityCode" placeholder="420" maxlength="4"> <br>
 
                             <label for="" class="pb-md-2 mt-md-4 mt-3">Postal code</label><br>
-                            <input type="text" class="form-control " name="" id="" placeholder="10119">
+                            <input type="number" class="form-control " name="" id="postalCode" placeholder="10119" max-length="5">
                         </div>
                     </div>
 
@@ -113,7 +113,7 @@
             </div>
             <div>
                 <p>₦2,497.00</p>
-                <p>₦119.64</p>
+                <p class="ml-auto">₦119.64</p>
                 <p>₦-60.00</p>
             </div>
 
