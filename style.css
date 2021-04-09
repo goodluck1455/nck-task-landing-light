@@ -64,7 +64,7 @@ body {
 .fa-user-circle {
     font-size: 35px;
     /* position: absolute;*/
-    margin-top: -0.8rem;
+    margin-top: -1.9rem;
     /* margin-left: 13rem;
     padding-left: 4rem; */
 }
@@ -297,10 +297,18 @@ body {
     .navbarA ul {
         flex-direction: column;
         line-height: 2.5rem;
-        background: burlywood;
+        background: #0d6efd;
+        color: white;
+        z-index: 1;
         position: absolute;
-        margin-left: -16.9%;
-        display: none;
+        margin-left: -19.9%;
+        margin-top: 1rem;
+        
+         user-select: none;
+ transition: 1s;
+ cursor: pointer;
+        transform: scaleX(0);
+transform-origin: left;
     }
     .navbarA {
         margin-left: -1.4%;
@@ -309,7 +317,7 @@ body {
     .fa-user-circle {
         position: absolute;
         margin-left: 10rem;
-        margin-top: -1.8rem;
+        margin-top: -2.1rem;
     }
     .Navbar-section .fa-bars {
         display: block;
