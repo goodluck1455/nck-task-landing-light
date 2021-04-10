@@ -29,7 +29,18 @@ function validate() {
     securityCode.style.border = '1px solid red'
     ExpiredDate.style.border = '1px solid red'
     postalCode.style.border = '1px solid red'
+    alert("Please fill in your card details")
     return false
+  } else if (
+    cardNumber.value !== "" ||
+    securityCode.value !== "" ||
+    ExpiredDate.value !== "" ||
+    postalCode.value !== ""
+  ) {
+    cardNumber.style.border = '1px solid blue'
+    securityCode.style.border = '1px solid blue'
+    ExpiredDate.style.border = '1px solid blue'
+    postalCode.style.border = '1px solid blue'
   } else {
     alert('Card details successfully added')
   }

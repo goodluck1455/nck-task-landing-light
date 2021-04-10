@@ -225,7 +225,7 @@ body {
     font-size: 25px;
 }
 
-.form-Submit{
+.form-Submit {
     color: white;
     font-weight: bold;
     padding: 12px;
@@ -247,7 +247,7 @@ body {
     cursor: pointer;
 }
 
-.card{
+.card {
     border: 1px solid red;
 }
 
@@ -258,16 +258,17 @@ body {
     justify-content: space-between;
 }
 
-.formInput input[type='number'], .formInput input[type='date'] {
+.formInput input[type='number'],
+.formInput input[type='date'] {
     /* font-size: 14px;
     font-weight: bold;
     padding-left: 20px; */
     background: var(--inputBackgroundcolor);
-  
-        /* width: 140%;    */
+    /* max-width: 140%; */
 }
-
-
+/* .payment-logos{
+ margin-left: 11rem;
+} */
 .visa-logo {
     width: 9%;
     margin-right: 2rem;
@@ -294,11 +295,13 @@ body {
 
 .card-input-form {
     display: flex;
-
 }
-.left-side-form{margin-left: 6rem;}
 
-@media screen and (max-width: 375px){
+.left-side-form {
+    margin-left: 6rem;
+}
+
+@media screen and (max-width: 375px) {
     .navbarA ul {
         flex-direction: column;
         line-height: 2.5rem;
@@ -308,12 +311,11 @@ body {
         position: absolute;
         margin-left: -19.9%;
         margin-top: 1rem;
-        
-         user-select: none;
- transition: 1s;
- cursor: pointer;
+        user-select: none;
+        transition: 1s;
+        cursor: pointer;
         transform: scaleX(0);
-transform-origin: left;
+        transform-origin: left;
     }
     .navbarA {
         margin-left: -1.4%;
@@ -368,7 +370,8 @@ transform-origin: left;
         padding: 0px;
         font-size: 16px;
     }
-    .formInput input[type='number'], .formInput input[type='date'] {
+    .formInput input[type='number'],
+    .formInput input[type='date'] {
         /* font-size: 14px; */
         /* font-weight: bold; */
         /* opacity: 0.6; */
@@ -393,7 +396,9 @@ transform-origin: left;
         margin-top: 1rem;
         margin-left: 0px;
     }
-    .left-side-form{margin-left: 10px;}
+    .left-side-form {
+        margin-left: 10px;
+    }
     .p-completion p {
         padding-top: 16px;
         font-size: 18px;
@@ -409,34 +414,47 @@ transform-origin: left;
     }
 }
 
+
 /* @media screen and (max-width: 360px) {} */
+
 @media screen and (min-width: 992px) {
-    .payinforA{grid-gap: 1px;}
-    .formInput input[type='number'],.formInput input[type='date']{width: 130%;}
-    .left-side-form{margin-left: 4rem;}
-    .form-Submit{width: 100%;}
+    .payinforA {
+        grid-gap: 1px;
+    }
+    .formInput input[type='number'],
+    .formInput input[type='date'] {
+        width: 130%;
+    }
+    .left-side-form {
+        margin-left: 4rem;
+    }
+    .form-Submit {
+        width: 100%;
+    }
 }
+
 @media screen and (min-width: 1200px) {
-   .formInput input[type='number'], .formInput input[type='date']{width: 140%;} 
+    .formInput input[type='number'],
+    .formInput input[type='date'] {
+        width: 140%;
+    }
 }
 
 @media screen and (max-width: 411px) {
-    .payinforA{
-        grid-template-columns:100%;
-        grid-gap:30px;
+    .payinforA {
+        grid-template-columns: 100%;
+        grid-gap: 30px;
     }
-    .card-details{
+    .card-details {
         margin-left: 0px;
     }
-    .left-side-form {margin-left: 1rem;}
-    .formInput input[type='number'], .formInput input[type='date']{
+    .left-side-form {
+        margin-left: 1rem;
+    }
+    .formInput input[type='number'],
+    .formInput input[type='date'] {
         width: 140%;
     }
-
-
-
-
-
     .navbarA ul {
         flex-direction: column;
         line-height: 2.5rem;
@@ -446,12 +464,11 @@ transform-origin: left;
         position: absolute;
         margin-left: -19.9%;
         margin-top: 1rem;
-        
-         user-select: none;
- transition: 1s;
- cursor: pointer;
+        user-select: none;
+        transition: 1s;
+        cursor: pointer;
         transform: scaleX(0);
-transform-origin: left;
+        transform-origin: left;
     }
     .navbarA {
         margin-left: -1.4%;
@@ -465,13 +482,10 @@ transform-origin: left;
     .Navbar-section .fa-bars {
         display: block;
     }
-     .payinfor {
+    .payinfor {
         margin-top: 1rem;
     }
-
-
-
-     .visa-logo {
+    .visa-logo {
         margin-left: 5rem;
         width: 15%;
     }
@@ -485,22 +499,61 @@ transform-origin: left;
     .paypal-logoB {
         width: 14%;
     }
-
-
-
     .form-Submit-2[type='submit'] {
         width: 50%;
         padding: 0px;
         font-size: 16px;
     }
-
-     .p-completion p {
+    .p-completion p {
         padding-top: 16px;
         font-size: 18px;
     }
-
     .form-Submit[type='submit'] {
         width: 100%;
     }
-
 }
+
+@media screen and (min-width: 768px) {
+    .payinforA {
+        grid-gap: 1px;
+    }
+    .formInput input[type='number'],
+    .formInput input[type='date'] {
+        width: 130%;
+    }
+    .left-side-form {
+        margin-left: 4rem;
+    }
+    .form-Submit {
+        width: 100%;
+    }
+    .paymentCard {
+        height: 14rem;
+        width: 20rem;
+    }
+    .left-side-form {
+        margin-left: 1rem;
+    }
+    .navbarA ul li {
+        margin-right: 23px;
+    }
+    /* .payinfor {
+        margin-top: 2rem;
+    } */
+    .form-Submit-2 {
+        width: 30%;
+    }
+    .visa-logo {
+        margin-left: 7rem;
+    }
+}
+
+
+/* @media screen and (576px <=width) {
+    .payinforA {
+        grid-template-columns: 100%;
+    }
+    .card-details {
+        margin-left: 0px;
+    }
+} */
