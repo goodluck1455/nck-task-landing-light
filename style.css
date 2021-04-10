@@ -314,8 +314,8 @@ body {
         user-select: none;
         transition: 1s;
         cursor: pointer;
-        transform: scaleX(0);
-        transform-origin: left;
+        transform: scaleY(0);
+        transform-origin:top;
     }
     .navbarA {
         margin-left: -1.4%;

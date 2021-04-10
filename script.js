@@ -9,13 +9,13 @@ let postalCode = document.querySelector('#postalCode')
 faBars.addEventListener('click', () => {
   faBars.style.display = 'none'
   faTimes.style.display = 'block'
-  navbar.style.transform = 'scaleX(1)'
+  navbar.style.transform = 'scaleY(1)'
 })
 
 faTimes.addEventListener('click', () => {
   faBars.style.display = 'block'
   faTimes.style.display = 'none'
-  navbar.style.transform = 'scaleX(0)'
+  navbar.style.transform = 'scaleY(0)'
 })
 
 function validate() {
@@ -29,13 +29,13 @@ function validate() {
     securityCode.style.border = '1px solid red'
     ExpiredDate.style.border = '1px solid red'
     postalCode.style.border = '1px solid red'
-    alert("Please fill in your card details")
+    alert('Please fill in your card details')
     return false
   } else if (
-    cardNumber.value !== "" ||
-    securityCode.value !== "" ||
-    ExpiredDate.value !== "" ||
-    postalCode.value !== ""
+    cardNumber.value !== '' ||
+    securityCode.value !== '' ||
+    ExpiredDate.value !== '' ||
+    postalCode.value !== ''
   ) {
     cardNumber.style.border = '1px solid blue'
     securityCode.style.border = '1px solid blue'
