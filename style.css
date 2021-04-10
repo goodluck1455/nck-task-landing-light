@@ -59,7 +59,32 @@ body {
     list-style: none;
     /* width: 10%; */
     margin-right: 70px;
+    position: relative;
+    cursor: pointer;
 }
+
+.navbarA ul li::after{
+ position: absolute;
+ content: "";
+ left: 0;
+ bottom: 0;
+ height: 10%;
+ width: 100%;
+background: #0d6efd;
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 250ms ease-in;
+
+}
+.navbarA ul li:hover::after{
+ transform: scaleX(1);
+}
+
+
+
+
+
+
 
 .fa-user-circle {
     font-size: 35px;
@@ -312,11 +337,18 @@ body {
         margin-left: -19.9%;
         margin-top: 1rem;
         user-select: none;
+        height: 21%;
         transition: 1s;
         cursor: pointer;
         transform: scaleY(0);
         transform-origin:top;
     }
+
+
+.navbarA ul li::after{
+background: white;
+}
+
     .navbarA {
         margin-left: -1.4%;
         margin-top: 2.5rem;
