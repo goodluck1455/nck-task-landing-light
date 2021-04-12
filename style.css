@@ -334,14 +334,14 @@
             color: white;
             z-index: 1;
             position: absolute;
-            margin-left: -19.9%;
+            margin-left: -100%;
             margin-top: 1rem;
             user-select: none;
             height: 21%;
             transition: 1s;
             cursor: pointer;
-            transform: scaleY(0);
-            transform-origin: top;
+            overflow: hidden;
+            transition: 1s ease-in-out;
         }
         .navbarA ul li::after {
             background: white;
@@ -489,13 +489,14 @@
             color: white;
             z-index: 1;
             position: absolute;
-            margin-left: -19.9%;
+            margin-left: -110%;
             margin-top: 1rem;
             user-select: none;
+            height: 21%;
             transition: 1s;
             cursor: pointer;
-            transform: scaleX(0);
-            transform-origin: left;
+            overflow: hidden;
+            transition: 1s ease-in-out;
         }
         .navbarA {
             margin-left: -1.4%;

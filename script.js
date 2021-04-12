@@ -9,13 +9,13 @@ let postalCode = document.querySelector('#postalCode')
 faBars.addEventListener('click', () => {
   faBars.style.display = 'none'
   faTimes.style.display = 'block'
-  navbar.style.transform = 'scaleY(1)'
+  navbar.style.marginLeft = "-96px"
 })
 
 faTimes.addEventListener('click', () => {
   faBars.style.display = 'block'
   faTimes.style.display = 'none'
-  navbar.style.transform = 'scaleY(0)'
+  navbar.style.marginLeft = "-110%"
 })
 
 function validate() {
