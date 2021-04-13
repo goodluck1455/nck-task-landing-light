@@ -169,6 +169,7 @@
             transform: translateX(0px);
         }
     }
+
     
     .paymentCard img {
         width: 3rem;
@@ -293,6 +294,22 @@
     /* .payment-logos{
  margin-left: 11rem;
 } */
+.formInput{
+     animation: 1s slideA ease-in;
+}
+
+
+
+ @keyframes slideA {
+        0% {
+            opacity: 0;
+            transform: translateX(90px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
     
     .visa-logo {
         width: 9%;
@@ -531,6 +548,7 @@
             width: 50%;
             padding: 0px;
             font-size: 16px;
+             padding: 5px 0px 4px 0px;
         }
         .p-completion p {
             padding-top: 16px;
@@ -538,6 +556,7 @@
         }
         .form-Submit[type='submit'] {
             width: 100%;
+            
         }
     }
     
@@ -578,7 +597,9 @@
         }
     }
     
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:576px) {
+
+
         .payinforA {
             grid-template-columns: 100%;
         }
@@ -598,7 +619,54 @@
         .paymentCard {
             margin: 0 auto;
         }
-        .Navbar-section .fa-bars {
+        .Navbar-section .fa-bars { 
             display: block;
         }
+    }
+
+    @media screen and (max-width:640px) and (orientation: landscape){
+      .Navbar-section{
+          padding: 3em 3em 0 3em;}
+
+          .navbarA ul {
+            flex-direction: column;
+            line-height: 2.5rem;
+            background: #0d6efd;
+            color: white;
+            z-index: 1;
+            position: absolute;
+            margin-left: -110%;
+            margin-top: 3.2rem;
+            user-select: none;
+            height: 21%;
+            transition: 1s;
+            cursor: pointer;
+            overflow: hidden;
+            transition: 1s ease-in-out;
+        }
+         
+
+        .Navbar-section .fa-bars {
+            display: block;
+            margin-right: 75%;
+            margin-top: 0.1%
+        }
+        .Navbar-section .fa-times{
+            margin-right: 75%;
+            margin-top: 0.1%
+        }
+        .payinfor{margin-top: 1rem;} 
+        .fa-user-circle{
+            margin-left: 6em;
+            margin-top: -1rem;}
+            .payinforA{    
+                grid-template-columns: 100%;
+                grid-gap: 30px;}
+            .card-details{margin-left: 0rem;}
+            .formInput input[type='number'], .formInput input[type='date']{
+                    width: 100%;
+            }
+            .visa-logo{    margin-left: 10rem;}
+            .form-Submit{width: 100%;}
+            .form-Submit-2{width: 40%;}
     }
