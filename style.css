@@ -484,7 +484,7 @@
         }
     }
     
-    @media screen and (max-width: 412px) {
+    @media screen and (max-width: 414px) {
         .payinforA {
             grid-template-columns: 100%;
             grid-gap: 30px;
