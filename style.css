@@ -624,7 +624,7 @@
         }
     }
 
-    @media screen and (max-width:640px) and (orientation: landscape){
+    @media screen and (max-width:734px) and (orientation: landscape){
       .Navbar-section{
           padding: 3em 3em 0 3em;}
 
@@ -638,7 +638,7 @@
             margin-left: -110%;
             margin-top: 3.2rem;
             user-select: none;
-            height: 21%;
+            height: auto;
             transition: 1s;
             cursor: pointer;
             overflow: hidden;
